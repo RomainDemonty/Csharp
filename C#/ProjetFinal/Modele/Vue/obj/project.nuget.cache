@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oiIe8CTDeC0/ruhUs9+ybZQP1HhDU5j6Ldiqo5AaL4ADyHYIRarML33A3QrV7NDXHNN1cT3eeniWkdZBbK9w5w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Vue\\Vue.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Romain\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

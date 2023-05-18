@@ -1,0 +1,23 @@
+{
+  "$id": "1",
+  "SelectedCompo": null,
+  "SelectedPC": null,
+  "VecPersonnes": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "Nom": "Test",
+        "motDePasse": "Test"
+      }
+    ]
+  },
+  "VecPcs": {
+    "$id": "4",
+    "$values": []
+  },
+  "VecComposants": {
+    "$id": "5",
+    "$values": []
+  }
+}

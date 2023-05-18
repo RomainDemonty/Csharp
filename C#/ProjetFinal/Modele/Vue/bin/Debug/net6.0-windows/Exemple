@@ -1,0 +1,10 @@
+{
+  "$id": "1",
+  "$values": [
+    {
+      "$id": "2",
+      "Nom": "Test",
+      "motDePasse": "Test"
+    }
+  ]
+}

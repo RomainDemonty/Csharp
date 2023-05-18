@@ -1,0 +1,71 @@
+﻿<Window x:Class="Vue.FenCompo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vue"
+        mc:Ignorable="d"
+        Title="FenCompo" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0" Width="200" Height="20" HorizontalAlignment="Left">
+            <MenuItem Header="Ajout Pc"></MenuItem>
+            <MenuItem Header="Composants" Background="LightSlateGray"></MenuItem>
+            <MenuItem Header="Quitter" ></MenuItem>
+        </Menu>
+
+        <TextBlock Grid.Row="1" Text="Tout les composants" TextDecorations="underline" VerticalAlignment="Bottom" Margin="10"></TextBlock>
+
+        <Border Grid.Row="2" Grid.RowSpan="5" BorderBrush="Black" BorderThickness="1" Margin="10">
+
+            <ListBox Grid.Row="2" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="1" Grid.RowSpan="6" BorderBrush="Black" BorderThickness="1" Margin="10">
+            <StackPanel Margin="10" >
+                <TextBlock Text="Composant:" Margin="10px" TextDecorations="underline"></TextBlock>
+                <TextBlock Text="Nom composant:" Margin="10px"></TextBlock>
+                <TextBox Margin="10px"></TextBox>
+
+                <TextBlock Text="Catégorie de composant:" Margin="10px"></TextBlock>
+                <ComboBox Margin="10px">
+                    <ComboBoxItem Content="Processeur"></ComboBoxItem>
+                    <ComboBoxItem Content="Carte mère"></ComboBoxItem>
+                    <ComboBoxItem Content="Ram"></ComboBoxItem>
+                    <ComboBoxItem Content="Refroidissement"></ComboBoxItem>
+                    <ComboBoxItem Content="Stockage"></ComboBoxItem>
+                    <ComboBoxItem Content="Système d'exploitation"></ComboBoxItem>
+                    <ComboBoxItem Content="Boitier"></ComboBoxItem>
+                    <ComboBoxItem Content="Carte graphique"></ComboBoxItem>
+                    <ComboBoxItem Content="Alimentation"></ComboBoxItem>
+                </ComboBox>
+
+                <TextBlock Text="Prix:" Margin="10px"></TextBlock>
+                <TextBox Margin="10px"></TextBox>
+
+                <Button Content="Supprimer" Margin="5" Width="120"  Click="ClickBouttonSupprimer"></Button>
+                <Button Content="Ajouter/Modifier" Margin="5" Width="120" Click="ClickBouttonAjouterSupprimer"></Button>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
