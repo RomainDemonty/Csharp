@@ -94,7 +94,10 @@ namespace Vue
                 else
                 {
                     //Ecriture
+                    
+
                     Conteneur.GetAllConteneur().AjouterPer(PersonneADD);
+
                     Serializer.SerializeJson(Conteneur.GetAllConteneur(), "Donnee");
 
                     //si existe pas rediriger vers une autre page

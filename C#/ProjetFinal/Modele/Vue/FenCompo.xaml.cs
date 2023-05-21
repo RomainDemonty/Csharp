@@ -33,5 +33,19 @@ namespace Vue
         {
 
         }
+
+        //Quitter du menu
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        //Premier du menu
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            FenPC fenpc = new FenPC();
+            fenpc.Show();
+            this.Close();
+        }
     }
 }

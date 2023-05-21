@@ -105,6 +105,8 @@ namespace Modele
         //Si éjà présent
         public int VerifPer(Personne P)
         {
+            Personne Personne2 = new Personne("Test", "Test");
+            Conteneur.GetAllConteneur().AjouterPer(Personne2);
             int res = 0;
             foreach (Personne Test in _vecPersonnes)
             {

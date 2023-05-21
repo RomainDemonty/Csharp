@@ -31,7 +31,14 @@ namespace Vue
 
         private void ClickBouttonSupprimer(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
 
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            FenCompo fenpc = new FenCompo();
+            fenpc.Show();
+            this.Close();
         }
     }
 }

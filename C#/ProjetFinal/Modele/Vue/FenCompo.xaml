@@ -23,9 +23,9 @@
         </Grid.ColumnDefinitions>
 
         <Menu Grid.Row="0" Width="200" Height="20" HorizontalAlignment="Left">
-            <MenuItem Header="Ajout Pc"></MenuItem>
+            <MenuItem Header="Ajout Pc" Click="MenuItem_Click_1"></MenuItem>
             <MenuItem Header="Composants" Background="LightSlateGray"></MenuItem>
-            <MenuItem Header="Quitter" ></MenuItem>
+            <MenuItem Header="Quitter" Click="MenuItem_Click" ></MenuItem>
         </Menu>
 
         <TextBlock Grid.Row="1" Text="Tout les composants" TextDecorations="underline" VerticalAlignment="Bottom" Margin="10"></TextBlock>

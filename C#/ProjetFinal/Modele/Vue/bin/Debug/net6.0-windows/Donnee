@@ -9,15 +9,20 @@
         "$id": "3",
         "Nom": "Test",
         "motDePasse": "Test"
+      },
+      {
+        "$id": "4",
+        "Nom": "Test1",
+        "motDePasse": "Test12"
       }
     ]
   },
   "VecPcs": {
-    "$id": "4",
+    "$id": "5",
     "$values": []
   },
   "VecComposants": {
-    "$id": "5",
+    "$id": "6",
     "$values": []
   }
 }
