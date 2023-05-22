@@ -3,9 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Vue"
+        xmlns:local="clr-namespace:Vue" xmlns:modele="clr-namespace:Modele;assembly=Modele"
         mc:Ignorable="d"
-        Title="FenPC" Height="500" Width="800">
+        Title="FenPC" Height="500" Width="800"
+        d:DataContext="{d:DesignInstance modele:Conteneur, IsDesignTimeCreatable=True}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -32,17 +33,7 @@
         <TextBlock Grid.Row="0" Text="Tout les pc" VerticalAlignment="Bottom" Margin="10"></TextBlock>
 
         <Border Grid.Row="1" Grid.RowSpan="5" BorderBrush="Black" BorderThickness="1" Margin="10">
-
-            <ListBox Grid.Row="2" ItemsSource="{Binding MesPc}">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        
-                        <!--<TextBlock Text="{Binding Nom}" FontWeight="Bold" />
-                        <TextBlock Text="{Binding Catégorie}" />
-                        <TextBlock Text="{Binding Prix, StringFormat={}{0:C}}" />-->
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+            
         </Border>
 
 

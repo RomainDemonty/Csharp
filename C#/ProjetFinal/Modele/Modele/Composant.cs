@@ -11,17 +11,16 @@ namespace Modele
     public class Composant
     {
         private string _nomComp;
-        private string _categorie;
+        private int _categorie;
         private float _prix;
 
         public float Prix
         {
             get { return _prix; }
-
             set { _prix = value; }
         }
 
-        public string Categorie
+        public int Categorie
         {
             get { return _categorie; }
 
@@ -35,7 +34,7 @@ namespace Modele
             set { _nomComp = value; }
         }
 
-        public Composant(string NomComp, string Categorie, float Prix)
+        public Composant(string NomComp, int Categorie, float Prix)
         {
             _nomComp = NomComp;
             _categorie = Categorie;

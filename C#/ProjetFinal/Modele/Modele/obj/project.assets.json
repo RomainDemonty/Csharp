@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Romain\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\romaincsharp\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\Modele.csproj",
+      "projectUniqueName": "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\Modele.csproj",
       "projectName": "Modele",
-      "projectPath": "C:\\Users\\user\\Desktop\\romaincsharp\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\Modele.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\romaincsharp\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\obj\\",
+      "projectPath": "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\Modele.csproj",
+      "packagesPath": "C:\\Users\\Romain\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Romain\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

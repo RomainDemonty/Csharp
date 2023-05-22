@@ -2,14 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Modele
 {
     [Serializable]
-    public class Conteneur
+    public class Conteneur : INotifyPropertyChanged
     {
         private static Conteneur _allConteneur =new Conteneur();
 
@@ -32,6 +34,10 @@ namespace Modele
 
             Personne Personne2 = new Personne("Test", "Test");
             AjouterPer(Personne2);
+
+
+            Composant Comp1 = new Composant("RTX 3060", 1 , 1000);
+            AjouterCompo(Comp1);
         }
 
         public static Conteneur Instance
@@ -103,7 +109,7 @@ namespace Modele
             return;
         }
 
-        //Si éjà présent
+        //Si déjà présent
         public int VerifPer(Personne P)
         {
             int res = 0;
@@ -132,5 +138,35 @@ namespace Modele
             return res;
         }
 
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        protected bool SetField<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)
+        {
+            if (EqualityComparer<T>.Default.Equals(field, value)) return false;
+            field = value;
+            OnPropertyChanged(propertyName);
+            return true;
+        }
+
+        protected bool SetProperty<T>(ref T field, T newValue, [CallerMemberName] string propertyName = null)
+        {
+            if (!Equals(field, newValue))
+            {
+                field = newValue;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+                return true;
+            }
+
+            return false;
+        }
+
+        private System.Collections.IEnumerable conteneur;
+
+        //public System.Collections.IEnumerable Conteneur { get => conteneur; set => SetProperty(ref conteneur, value); }
     }
 }

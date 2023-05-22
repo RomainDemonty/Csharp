@@ -3,9 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Vue"
+        xmlns:local="clr-namespace:Vue" xmlns:modele="clr-namespace:Modele;assembly=Modele" d:DataContext="{d:DesignInstance Type=modele:Conteneur}"
         mc:Ignorable="d"
-        Title="FenCompo" Height="450" Width="800">
+        Title="FenCompo" Height="450" Width="800"
+        DataContext="{d:DesignInstance modele:Conteneur, IsDesignTimeCreatable=True}">
+
+    <Window.Resources>
+        <local:Converter x:Key="Converter" />
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
@@ -31,13 +36,15 @@
         <TextBlock Grid.Row="1" Text="Tout les composants" TextDecorations="underline" VerticalAlignment="Bottom" Margin="10"></TextBlock>
 
         <Border Grid.Row="2" Grid.RowSpan="5" BorderBrush="Black" BorderThickness="1" Margin="10">
-
-            <ListBox Grid.Row="2" >
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+			<ListView ItemsSource="{Binding VecComposants  }" SelectedItem="{Binding Modele.SelectedCompo}"   >
+				<ListView.View >
+					<GridView  >
+						<GridViewColumn  Header="Nom"  DisplayMemberBinding="{Binding nom}"  Width="220"/>
+						<GridViewColumn Header="Categorie"  DisplayMemberBinding="{Binding Categorie}" Width="140"/>
+						<GridViewColumn Header="Prix"  DisplayMemberBinding="{Binding prix}" Width="80"/>
+					</GridView>
+				</ListView.View>
+			</ListView>
         </Border>
 
         <Border Grid.Column="1" Grid.Row="1" Grid.RowSpan="6" BorderBrush="Black" BorderThickness="1" Margin="10">

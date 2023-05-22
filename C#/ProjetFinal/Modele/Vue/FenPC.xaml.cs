@@ -22,6 +22,7 @@ namespace Vue
         public FenPC()
         {
             InitializeComponent();
+            DataContext = Modele.Conteneur.Instance;
         }
 
         private void ClickBouttonAjoutSupp(object sender, RoutedEventArgs e)
