@@ -11,40 +11,41 @@ namespace Modele
     [Serializable]
     public class Conteneur
     {
-        private static Conteneur _allConteneur;
+        private static Conteneur _allConteneur =new Conteneur();
 
         //Biding
         private Composant selected_compo;
         private PC selected_pc;
 
-        private ObservableCollection<Personne> _vecPersonnes;
-        private ObservableCollection<PC> _vecPcs;
-        private ObservableCollection<Composant> _vecComposants;
+        private ObservableCollection<Personne> _vecPersonnes = null;
+        private ObservableCollection<PC> _vecPcs = null;
+        private ObservableCollection<Composant> _vecComposants = null;
 
         //Constructeur des vecteurs
         public Conteneur()
         {
-            _vecPersonnes = new ObservableCollection<Personne>();
-            _vecComposants = new ObservableCollection<Composant>();
-            _vecPcs = new ObservableCollection<PC>();
+            VecPersonnes = new ObservableCollection<Personne>();
+            VecComposants = new ObservableCollection<Composant>();
+            VecPcs = new ObservableCollection<PC>();
 
             //Si je veux rajouter des éléments par défault c'est ici
+
+            Personne Personne2 = new Personne("Test", "Test");
+            AjouterPer(Personne2);
         }
 
-        public static Conteneur GetAllConteneur()
+        public static Conteneur Instance
         {
-            if (_allConteneur == null)
+            get
             {
-                if (File.Exists("Donnees"))
-                {
-                    _allConteneur = Serializer.DeserializeJson("Donnees");
-                }
-                else
-                {
-                    _allConteneur = new Conteneur();
-                }
+                return _allConteneur;
             }
-            return _allConteneur;
+            set
+            {
+                if (_allConteneur == value) return;
+                _allConteneur = value;
+
+            }
         }
 
         public Composant SelectedCompo
@@ -77,38 +78,36 @@ namespace Modele
         //Les méthodes d'ajout
         public void AjouterCompo(Composant C)
         {
-            _vecComposants.Add((Composant)C);
+            VecComposants.Add(C);
         }
         public void AjouterPC(PC P)
         {
-            _vecPcs.Add((PC)P);
+            VecPcs.Add(P);
         }
         public void AjouterPer(Personne P)
         {
-            _vecPersonnes.Add((Personne)P);
+            VecPersonnes.Add(P);
         }
 
         //Suppression d'un élément
         public void SuppressionPC(PC P)
         {
             int index;
-            index = Conteneur.GetAllConteneur()._vecPcs.IndexOf(selected_pc);
+            //index = Conteneur.GetAllConteneur()._vecPcs.IndexOf(selected_pc);
             return;
         }
         public void SuppressionComp(Composant C)
         {
             int index;
-            index = Conteneur.GetAllConteneur()._vecComposants.IndexOf(selected_compo);
+            //index = Conteneur.GetAllConteneur()._vecComposants.IndexOf(selected_compo);
             return;
         }
 
         //Si éjà présent
         public int VerifPer(Personne P)
         {
-            Personne Personne2 = new Personne("Test", "Test");
-            Conteneur.GetAllConteneur().AjouterPer(Personne2);
             int res = 0;
-            foreach (Personne Test in _vecPersonnes)
+            foreach (Personne Test in VecPersonnes)
             {
                 if (P.Nom == Test.Nom)
                 {

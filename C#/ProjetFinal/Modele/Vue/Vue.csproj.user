@@ -13,6 +13,9 @@
     <Compile Update="FenPC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WindowConnection.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="FenCompo.xaml">
@@ -21,7 +24,7 @@
     <Page Update="FenPC.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="WindowConnection.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

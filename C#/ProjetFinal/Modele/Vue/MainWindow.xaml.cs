@@ -45,7 +45,7 @@ namespace Vue
 
                 Personne PersonneADD = new Personne(name, mdp);
 
-                existe = Conteneur.GetAllConteneur().VerifPer(PersonneADD);
+                existe = Conteneur.Instance.VerifPer(PersonneADD);
 
                 if (existe==1)
                 {
@@ -55,11 +55,11 @@ namespace Vue
                 else
                 {
                     //list.Add(PersonneADD);
-
+                        
                     //Ecriture
-                    Conteneur.GetAllConteneur().AjouterPer(PersonneADD);
-                    Serializer.SerializeJson(Conteneur.GetAllConteneur(), "Donnee");
-
+                    Conteneur.Instance.AjouterPer(PersonneADD);
+                    Serializer.SerializeJson(Conteneur.Instance, "Donnee");
+                        
                     //si existe pas rediriger vers une autre page
                     FenCompo fenCompo = new FenCompo();
                     fenCompo.Show();
@@ -84,7 +84,7 @@ namespace Vue
             {
                 Personne PersonneADD = new Personne(name, mdp);
 
-                existe = Conteneur.GetAllConteneur().VerifPer(PersonneADD);
+                existe = Conteneur.Instance.VerifPer(PersonneADD);
 
                 if (existe != 2)
                 {
@@ -94,8 +94,8 @@ namespace Vue
                 else
                 {
                     //Ecriture
-                    Conteneur.GetAllConteneur().AjouterPer(PersonneADD);
-                    Serializer.SerializeJson(Conteneur.GetAllConteneur(), "Donnee");
+                    Conteneur.Instance.AjouterPer(PersonneADD);
+                    Serializer.SerializeJson(Conteneur.Instance, "Donnee");
 
                     //si existe pas rediriger vers une autre page
                     FenCompo fenCompo = new FenCompo();

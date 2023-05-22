@@ -40,5 +40,10 @@ namespace Vue
             fenpc.Show();
             this.Close();
         }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

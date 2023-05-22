@@ -1,0 +1,32 @@
+﻿<Window x:Class="Vue.WindowConnection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vue"
+        mc:Ignorable="d"
+        Title="WindowConnection" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border BorderBrush="Black" BorderThickness="1" Width="250" Margin="10">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Grid.Row="0" Text="Nom d'utilisateur:" Margin="10"></TextBlock>
+                <TextBox Grid.Row="1" x:Name="NomPersonneTextBox" Margin="10" HorizontalAlignment="Left" Width="200"></TextBox>
+
+                <TextBlock Grid.Row="2" Text="Mot de passe:" Margin="10"></TextBlock>
+                <TextBox Grid.Row="3" x:Name="MdpPersonneTextBox" Margin="10" HorizontalAlignment="Left" Width="200"></TextBox>
+            </StackPanel>
+        </Border>
+        <StackPanel Orientation="Horizontal" Grid.Row="4" HorizontalAlignment="Center">
+            <Button Content="S'inscrire" Margin="10" Width="100" Click="ClickBouttonInscrire" ></Button>
+            <Button Content="Se connecter" Margin="10" Width="100" Click="ClickBouttonConnect"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

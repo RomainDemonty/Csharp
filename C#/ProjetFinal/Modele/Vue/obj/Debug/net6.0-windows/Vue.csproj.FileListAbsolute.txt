@@ -30,7 +30,6 @@ C:\Users\Romain\OneDrive\Bureau\C#\ProjetFinal\Modele\Vue\bin\Debug\net6.0-windo
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue.csproj.AssemblyReference.cache
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\FenCompo.g.cs
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\FenPC.g.cs
-C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue_MarkupCompile.cache
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue_MarkupCompile.lref
@@ -47,7 +46,6 @@ C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\bin\Debug\net6.
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\bin\Debug\net6.0-windows\Modele.pdb
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\FenCompo.baml
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\FenPC.baml
-C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue.g.resources
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue.AssemblyInfoInputs.cache
@@ -56,3 +54,5 @@ C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue.csproj.CopyComplete
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue.genruntimeconfig.cache
 C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\ref\Vue.dll
+C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\WindowConnection.g.cs
+C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\WindowConnection.baml

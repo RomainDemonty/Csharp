@@ -25,17 +25,21 @@
 
         <Menu Grid.Row="0" Width="200" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top">
             <MenuItem Header="Ajout Pc" Background="LightSlateGray"></MenuItem>
-            <MenuItem Header="Composants"></MenuItem>
-            <MenuItem Header="Quitter" ></MenuItem>
+            <MenuItem Header="Composants" Click="MenuItem_Click"></MenuItem>
+            <MenuItem Header="Quitter" Click="MenuItem_Click_1" ></MenuItem>
         </Menu>
 
         <TextBlock Grid.Row="0" Text="Tout les pc" VerticalAlignment="Bottom" Margin="10"></TextBlock>
 
         <Border Grid.Row="1" Grid.RowSpan="5" BorderBrush="Black" BorderThickness="1" Margin="10">
 
-            <ListBox Grid.Row="2" >
+            <ListBox Grid.Row="2" ItemsSource="{Binding MesPc}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
+                        
+                        <!--<TextBlock Text="{Binding Nom}" FontWeight="Bold" />
+                        <TextBlock Text="{Binding Catégorie}" />
+                        <TextBlock Text="{Binding Prix, StringFormat={}{0:C}}" />-->
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>

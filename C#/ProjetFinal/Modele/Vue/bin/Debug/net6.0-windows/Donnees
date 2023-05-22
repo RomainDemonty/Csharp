@@ -1,0 +1,38 @@
+{
+  "$id": "1",
+  "SelectedCompo": null,
+  "SelectedPC": null,
+  "VecPersonnes": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "Nom": "Test",
+        "motDePasse": "Test"
+      },
+      {
+        "$id": "4",
+        "Nom": "Test",
+        "motDePasse": "Test"
+      },
+      {
+        "$id": "5",
+        "Nom": "Test",
+        "motDePasse": "Test"
+      },
+      {
+        "$id": "6",
+        "Nom": "zadazdaz",
+        "motDePasse": "zadaz"
+      }
+    ]
+  },
+  "VecPcs": {
+    "$id": "7",
+    "$values": []
+  },
+  "VecComposants": {
+    "$id": "8",
+    "$values": []
+  }
+}

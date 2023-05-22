@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modele;
 
 namespace Vue
 {
@@ -22,6 +23,12 @@ namespace Vue
         public FenCompo()
         {
             InitializeComponent();
+            /*
+            foreach (Composant comp in Conteneur.GetAllConteneur().VecComposants)
+            {
+
+            }
+            */
         }
 
         private void ClickBouttonSupprimer(object sender, RoutedEventArgs e)
