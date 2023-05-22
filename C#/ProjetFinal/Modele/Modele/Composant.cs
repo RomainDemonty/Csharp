@@ -18,21 +18,21 @@ namespace Modele
         {
             get { return _prix; }
 
-            set { _prix = Prix; }
+            set { _prix = value; }
         }
 
         public string Categorie
         {
             get { return _categorie; }
 
-            set { _categorie = Categorie; }
+            set { _categorie = value; }
         }
 
         public string NomComp
         {
             get { return _nomComp; }
 
-            set { _nomComp = Categorie; }
+            set { _nomComp = value; }
         }
 
         public Composant(string NomComp, string Categorie, float Prix)

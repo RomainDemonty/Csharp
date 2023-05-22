@@ -71,19 +71,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Romain\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Vue\\Vue.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\romaincsharp\\Csharp\\C#\\ProjetFinal\\Modele\\Vue\\Vue.csproj",
       "projectName": "Vue",
-      "projectPath": "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Vue\\Vue.csproj",
-      "packagesPath": "C:\\Users\\Romain\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Vue\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\romaincsharp\\Csharp\\C#\\ProjetFinal\\Modele\\Vue\\Vue.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\romaincsharp\\Csharp\\C#\\ProjetFinal\\Modele\\Vue\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Romain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -97,8 +97,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\Modele.csproj": {
-              "projectPath": "C:\\Users\\Romain\\OneDrive\\Bureau\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\Modele.csproj"
+            "C:\\Users\\user\\Desktop\\romaincsharp\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\Modele.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\romaincsharp\\Csharp\\C#\\ProjetFinal\\Modele\\Modele\\Modele.csproj"
             }
           }
         }
@@ -137,7 +137,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -107,28 +107,28 @@ namespace Modele
         public int VerifPer(Personne P)
         {
             int res = 0;
-            foreach (Personne Test in VecPersonnes)
+          
+            foreach (Personne Test in Conteneur.Instance.VecPersonnes)
             {
-                if (P.Nom == Test.Nom)
+                if (P.Nom == Test.Nom) 
                 {
                     res = 1;
+                   
                     return res;
                 }
                 else
                 {
-                    if (P.motDePasse == Test.motDePasse)
+                    if (P.motDePasse == Test.motDePasse)   
                     {
                         res = 2;
+                       
                         return res;
                     }
-                    else
-                    {
-                        res = 0;
-                        return res;
-                    }
+                    
                 }
             }
 
+           
             return res;
         }
 

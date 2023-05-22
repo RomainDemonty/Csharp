@@ -12,14 +12,14 @@ namespace Modele
         {
             get { return _nom; }
 
-            set { _nom = Nom; }
+            set { _nom = value; }
         }
 
         public string motDePasse
         {
             get { return _motDePasse; }
 
-            set { _motDePasse = motDePasse; }
+            set { _motDePasse = value; }
         }
 
         public Personne()
@@ -28,17 +28,13 @@ namespace Modele
             _nom = "Test";
         }
 
-        public Personne(string Nom, string motDePasse)
+        public Personne(string n, string mdp)
         {
-            _motDePasse = motDePasse;
-            _nom = Nom;
+            motDePasse = mdp;
+            Nom = n;
         }
 
-        public Personne(Personne B)
-        {
-            _motDePasse = B._motDePasse;
-            _nom = B._nom;
-        }
+        
 
     }
 }

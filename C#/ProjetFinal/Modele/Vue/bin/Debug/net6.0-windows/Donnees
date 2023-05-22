@@ -12,27 +12,17 @@
       },
       {
         "$id": "4",
-        "Nom": "Test",
-        "motDePasse": "Test"
-      },
-      {
-        "$id": "5",
-        "Nom": "Test",
-        "motDePasse": "Test"
-      },
-      {
-        "$id": "6",
-        "Nom": "zadazdaz",
-        "motDePasse": "zadaz"
+        "Nom": "azerty",
+        "motDePasse": "z"
       }
     ]
   },
   "VecPcs": {
-    "$id": "7",
+    "$id": "5",
     "$values": []
   },
   "VecComposants": {
-    "$id": "8",
+    "$id": "6",
     "$values": []
   }
 }

@@ -17,7 +17,7 @@ namespace Modele
                 WriteIndented = true
             };
 
-            File.WriteAllText(filename, JsonSerializer.Serialize(testCont, options));
+            File.WriteAllText(filename, JsonSerializer.Serialize(Conteneur.Instance, options));
         }
 
         public static Conteneur DeserializeJson(string fileName)

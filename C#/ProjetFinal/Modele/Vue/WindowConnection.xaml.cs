@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
+using System.Windows.Markup;
 
 namespace Vue
 {
@@ -49,15 +50,14 @@ namespace Vue
 
                 existe = Conteneur.Instance.VerifPer(PersonneADD);
 
-                if (existe == 1 || existe == 2)
+                if (existe == 1 )
                 {
                     //sinon mettre utilisateur déjà existant
                     MessageBox.Show("L'utilisateur est déjà existant !", "Erreur", MessageBoxButton.OKCancel);
                 }
                 else
                 {
-                    //list.Add(PersonneADD);
-
+                   
                     //Ecriture
                     Conteneur.Instance.VecPersonnes.Add(PersonneADD);
                     Serializer.SerializeJson(Conteneur.Instance, "Donnees");
@@ -75,7 +75,7 @@ namespace Vue
         {
             string name = NomPersonneTextBox.Text;
             string mdp = MdpPersonneTextBox.Text;
-            int existe = 0;
+           bool trouve = false;
 
 
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(mdp))
@@ -84,29 +84,22 @@ namespace Vue
             }
             else
             {
-                Personne PersonneADD = new Personne(name, mdp);
 
-                existe = Conteneur.Instance.VerifPer(PersonneADD);
-
-                if (existe != 2)
+                foreach (Personne personne in Conteneur.Instance.VecPersonnes)
                 {
-                    //sinon mettre utilisateur déjà existant
-                    MessageBox.Show("Données invalide !", "Erreur", MessageBoxButton.OKCancel);
+                    if (name == personne.Nom && mdp == personne.motDePasse)
+                    {
+                        trouve = true;
+                        FenCompo fenCompo = new FenCompo();
+                        fenCompo.Show();
+                        this.Close();
+
+                    }
                 }
-                else
-                {
-                    //Ecriture
+                // Vérifier si le nom d'utilisateur et le mot de passe sont corrects
 
-
-                    Conteneur.Instance.AjouterPer(PersonneADD);
-
-                    Serializer.SerializeJson(Conteneur.Instance, "Donnees");
-
-                    //si existe pas rediriger vers une autre page
-                    FenCompo fenCompo = new FenCompo();
-                    fenCompo.Show();
-                    this.Close();
-                }
+                if (!trouve)
+                    MessageBox.Show("Nom d'utilisateur ou mot de passe incorrect.");
             }
         }
     }
