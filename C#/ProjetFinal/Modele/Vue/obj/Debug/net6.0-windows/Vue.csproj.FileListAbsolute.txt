@@ -85,4 +85,3 @@ C:\Users\user\Desktop\romaincsharp\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\ne
 C:\Users\user\Desktop\romaincsharp\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue.pdb
 C:\Users\user\Desktop\romaincsharp\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\Vue.genruntimeconfig.cache
 C:\Users\user\Desktop\romaincsharp\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\ref\Vue.dll
-C:\Users\Romain\OneDrive\Bureau\Csharp\C#\ProjetFinal\Modele\Vue\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

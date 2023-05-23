@@ -34,12 +34,15 @@
 
         <Border Grid.Row="2" Grid.RowSpan="5" BorderBrush="Black" BorderThickness="1" Margin="10">
 
-            <ListBox Grid.Row="2" >
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+            <ListView ItemsSource="{Binding VecComposants  }" SelectedItem="{Binding Modele.SelectedCompo}"   >
+                <ListView.View >
+                    <GridView  >
+                        <GridViewColumn  Header="Nom"  DisplayMemberBinding="{Binding Nom}"  Width="220"/>
+                        <GridViewColumn Header="Categorie"  DisplayMemberBinding="{Binding Categorie}" Width="140"/>
+                        <GridViewColumn Header="Prix"  DisplayMemberBinding="{Binding Prix}" Width="80"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
         </Border>
 
         <Border Grid.Column="1" Grid.Row="1" Grid.RowSpan="6" BorderBrush="Black" BorderThickness="1" Margin="10">
