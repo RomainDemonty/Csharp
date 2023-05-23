@@ -23,6 +23,7 @@ namespace Vue
         public FenCompo()
         {
             InitializeComponent();
+             DataContext = Conteneur.Instance;
             /*
             foreach (Composant comp in Conteneur.GetAllConteneur().VecComposants)
             {
