@@ -56,23 +56,15 @@
                 <TextBox Margin="10px"   Text="{Binding Instance.SelectedCompo.NomComp}" x:Name="Name"></TextBox>
 
                 <TextBlock Text="Catégorie de composant:" Margin="10px"></TextBlock>
-                <ComboBox Margin="10px" x:Name="Box" >
-                    <ComboBoxItem Content="Processeur" ></ComboBoxItem>
-                    <ComboBoxItem Content="Carte mère"></ComboBoxItem>
-                    <ComboBoxItem Content="Ram"></ComboBoxItem>
-                    <ComboBoxItem Content="Refroidissement"></ComboBoxItem>
-                    <ComboBoxItem Content="Stockage"></ComboBoxItem>
-                    <ComboBoxItem Content="Système d'exploitation"></ComboBoxItem>
-                    <ComboBoxItem Content="Boitier"></ComboBoxItem>
-                    <ComboBoxItem Content="Carte graphique"></ComboBoxItem>
-                    <ComboBoxItem Content="Alimentation"></ComboBoxItem>
+                <ComboBox Margin="10px" x:Name="Box">
                 </ComboBox>
 
                 <TextBlock Text="Prix:" Margin="10px"></TextBlock>
-                <TextBox Margin="10px" x:Name="Euro"></TextBox>
+                <TextBox Margin="10px" Text="{Binding Instance.SelectedCompo.Prix}" x:Name="Euro"></TextBox>
 
                 <Button Content="Supprimer" Margin="5" Width="120"  Click="ClickBouttonSupprimer"></Button>
-                <Button Content="Ajouter/Modifier" Margin="5" Width="120" Click="ClickBouttonAjouterSupprimer"></Button>
+                <Button Content="Ajouter" Margin="5" Width="120" Click="ClickBouttonAjouterSupprimer"></Button>
+                <Button Content="Sauvegarde" Margin="5" Width="120" Click="Sauvegarde"></Button>
             </StackPanel>
         </Border>
 

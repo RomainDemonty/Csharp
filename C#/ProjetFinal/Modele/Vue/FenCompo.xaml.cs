@@ -32,7 +32,18 @@ namespace Vue
                 Conteneur.Instance = Serializer.DeserializeJson("Donnees");
             }
             ¨*/
+            Box.Items.Add("Processeur");
+            Box.Items.Add("Carte mère");
+            Box.Items.Add("Ram");
+            Box.Items.Add("Refroidissement");
+            Box.Items.Add("Stockage");
+            Box.Items.Add("Système d'exploitation");
+            Box.Items.Add("Boitier");
+            Box.Items.Add("Carte graphique");
+            Box.Items.Add("Alimentation");
             DataContext = Conteneur.Instance;
+
+
         }
 
         private void ClickBouttonSupprimer(object sender, RoutedEventArgs e)
@@ -50,7 +61,7 @@ namespace Vue
 
         private void ClickBouttonAjouterSupprimer(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Euro.Text)|| string.IsNullOrEmpty(Name.Text) || Box.SelectedItem == null)
+                 if (string.IsNullOrEmpty(Euro.Text)|| string.IsNullOrEmpty(Name.Text) || Box.SelectedItem == null)
                 {
                     if (string.IsNullOrEmpty(Euro.Text))
                     {
@@ -73,11 +84,13 @@ namespace Vue
                     }
                     else
                     {
-                        switch (Box.SelectedItem.ToString())
+                        
+                        switch (Box.SelectedItem)
                         {
                             case "Processeur":
                                 Cat = 1;
-                                break;
+                                MessageBox.Show("Testtest!");
+                            break;
                             case "Carte mère":
                                 Cat = 2;
                                 break;
@@ -108,7 +121,7 @@ namespace Vue
                         Conteneur.Instance.VecComposants.Add(composantADD);
                         Serializer.SerializeJson(Conteneur.Instance, "Donnees.json");
                 }
-                }
+            }
 
         }
 
@@ -124,6 +137,12 @@ namespace Vue
             FenPC fenpc = new FenPC();
             fenpc.Show();
             this.Close();
+        }
+
+        private void Sauvegarde(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Sauvegarde effectuée!");
+            Serializer.SerializeJson(Conteneur.Instance, "Donnees.json");
         }
     }
 }
