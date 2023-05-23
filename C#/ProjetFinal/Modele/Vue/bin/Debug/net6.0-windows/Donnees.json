@@ -23,6 +23,13 @@
   },
   "VecComposants": {
     "$id": "6",
-    "$values": []
+    "$values": [
+      {
+        "$id": "7",
+        "Prix": 200,
+        "Categorie": 1,
+        "NomComp": "i7"
+      }
+    ]
   }
 }

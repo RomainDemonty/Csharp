@@ -36,7 +36,7 @@ namespace Modele
             AjouterPer(Personne2);
 
 
-            Composant Comp1 = new Composant("RTX 3060", 1 , 1000);
+            Composant Comp1 = new Composant("RTX 3060", 8 , 1000);
             AjouterCompo(Comp1);
         }
 
@@ -57,38 +57,45 @@ namespace Modele
         public Composant SelectedCompo
         {
             get { return selected_compo; }
-            set { selected_compo = value; }
+            set { selected_compo = value;
+                OnPropertyChanged();
+            }
         }
         public PC SelectedPC
         {
             get { return selected_pc; }
-            set { selected_pc = value; }
+            set { selected_pc = value; OnPropertyChanged(); }
         }
 
         public ObservableCollection<Personne> VecPersonnes
         {
             get { return _vecPersonnes; }
-            set { _vecPersonnes = value; }
+            set { _vecPersonnes = value; /*OnPropertyChanged();*/ }
         }
         public ObservableCollection<PC> VecPcs
         {
             get { return _vecPcs; }
-            set { _vecPcs = value; }
+            set { _vecPcs = value; OnPropertyChanged(); }
+
         }
         public ObservableCollection<Composant> VecComposants
         {
             get { return _vecComposants; }
-            set { _vecComposants = value; }
+            set { _vecComposants = value ;
+                OnPropertyChanged();
+            }
         }
 
         //Les méthodes d'ajout
         public void AjouterCompo(Composant C)
         {
             VecComposants.Add(C);
+            OnPropertyChanged("");
         }
         public void AjouterPC(PC P)
         {
             VecPcs.Add(P);
+            OnPropertyChanged("");
         }
         public void AjouterPer(Personne P)
         {
@@ -98,15 +105,13 @@ namespace Modele
         //Suppression d'un élément
         public void SuppressionPC(PC P)
         {
-            int index;
-            //index = Conteneur.GetAllConteneur()._vecPcs.IndexOf(selected_pc);
-            return;
+            Conteneur.Instance.VecPcs.Remove(Conteneur.Instance.SelectedPC);
+            OnPropertyChanged("");
         }
         public void SuppressionComp(Composant C)
         {
-            int index;
-            //index = Conteneur.GetAllConteneur()._vecComposants.IndexOf(selected_compo);
-            return;
+            Conteneur.Instance.VecComposants.Remove(Conteneur.Instance.SelectedCompo);
+            OnPropertyChanged("");
         }
 
         //Si déjà présent
@@ -145,6 +150,7 @@ namespace Modele
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        /*
         protected bool SetField<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)
         {
             if (EqualityComparer<T>.Default.Equals(field, value)) return false;
@@ -164,9 +170,10 @@ namespace Modele
 
             return false;
         }
+        */
 
-        private System.Collections.IEnumerable conteneur;
+        //private System.Collections.IEnumerable conteneur;
 
-        //public System.Collections.IEnumerable Conteneur { get => conteneur; set => SetProperty(ref conteneur, value); }
+        //public System.Collections.IEnumerable TestEnumerable { get => conteneur; set => SetProperty(ref conteneur, value); }
     }
 }

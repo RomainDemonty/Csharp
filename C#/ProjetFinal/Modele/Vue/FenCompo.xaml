@@ -8,6 +8,10 @@
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance modele:Conteneur, IsDesignTimeCreatable=True}"
         Title="FenCompo" Height="450" Width="800">
+    <Window.Resources>
+        <local:Converter x:Key="Converter"/>
+    </Window.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
@@ -30,16 +34,16 @@
             <MenuItem Header="Quitter" Click="MenuItem_Click" ></MenuItem>
         </Menu>
 
-        <TextBlock Grid.Row="1" Text="Tout les composants" TextDecorations="underline" VerticalAlignment="Bottom" Margin="10"></TextBlock>
+        <TextBlock Grid.Row="1" Text="Tous les composants" TextDecorations="underline" VerticalAlignment="Bottom" Margin="10"></TextBlock>
 
         <Border Grid.Row="2" Grid.RowSpan="5" BorderBrush="Black" BorderThickness="1" Margin="10">
 
-            <ListView ItemsSource="{Binding VecComposants  }" SelectedItem="{Binding Modele.SelectedCompo}"   >
+            <ListView ItemsSource="{Binding VecComposants  }" SelectedItem="{Binding SelectedCompo}"   >
                 <ListView.View >
                     <GridView  >
-                        <GridViewColumn  Header="Nom"  DisplayMemberBinding="{Binding Nom}"  Width="220"/>
-                        <GridViewColumn Header="Categorie"  DisplayMemberBinding="{Binding Categorie}" Width="140"/>
-                        <GridViewColumn Header="Prix"  DisplayMemberBinding="{Binding Prix}" Width="80"/>
+                        <GridViewColumn  Header="Nom"  DisplayMemberBinding="{Binding NomComp , UpdateSourceTrigger=PropertyChanged}"  Width="220"/>
+                        <GridViewColumn Header="Categorie"  DisplayMemberBinding="{Binding Categorie, Converter={StaticResource Converter}, UpdateSourceTrigger=PropertyChanged}" Width="155"/>
+                        <GridViewColumn Header="Prix"  DisplayMemberBinding="{Binding Prix, UpdateSourceTrigger=PropertyChanged}" Width="80"/>
                     </GridView>
                 </ListView.View>
             </ListView>
@@ -49,11 +53,11 @@
             <StackPanel Margin="10" >
                 <TextBlock Text="Composant:" Margin="10px" TextDecorations="underline"></TextBlock>
                 <TextBlock Text="Nom composant:" Margin="10px"></TextBlock>
-                <TextBox Margin="10px"   Text="{Binding Instance.SelectedCompo.NomComp}"></TextBox>
+                <TextBox Margin="10px"   Text="{Binding Instance.SelectedCompo.NomComp}" x:Name="Name"></TextBox>
 
                 <TextBlock Text="Catégorie de composant:" Margin="10px"></TextBlock>
-                <ComboBox Margin="10px">
-                    <ComboBoxItem Content="Processeur"></ComboBoxItem>
+                <ComboBox Margin="10px" x:Name="Box" >
+                    <ComboBoxItem Content="Processeur" ></ComboBoxItem>
                     <ComboBoxItem Content="Carte mère"></ComboBoxItem>
                     <ComboBoxItem Content="Ram"></ComboBoxItem>
                     <ComboBoxItem Content="Refroidissement"></ComboBoxItem>
@@ -65,7 +69,7 @@
                 </ComboBox>
 
                 <TextBlock Text="Prix:" Margin="10px"></TextBlock>
-                <TextBox Margin="10px"></TextBox>
+                <TextBox Margin="10px" x:Name="Euro"></TextBox>
 
                 <Button Content="Supprimer" Margin="5" Width="120"  Click="ClickBouttonSupprimer"></Button>
                 <Button Content="Ajouter/Modifier" Margin="5" Width="120" Click="ClickBouttonAjouterSupprimer"></Button>

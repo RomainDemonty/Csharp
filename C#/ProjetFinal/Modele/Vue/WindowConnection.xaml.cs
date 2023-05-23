@@ -25,11 +25,12 @@ namespace Vue
         public WindowConnection()
         {
             InitializeComponent();
-
-            if (File.Exists("Donnees"))
+            
+            if (File.Exists("Donnees.json"))
             {
-                Conteneur.Instance = Serializer.DeserializeJson("Donnees");
+                Conteneur.Instance = Serializer.DeserializeJson("Donnees.json");
             }
+            
         }
 
         private void ClickBouttonInscrire(object sender, RoutedEventArgs e)
@@ -60,7 +61,7 @@ namespace Vue
                    
                     //Ecriture
                     Conteneur.Instance.VecPersonnes.Add(PersonneADD);
-                    Serializer.SerializeJson(Conteneur.Instance, "Donnees");
+                    Serializer.SerializeJson(Conteneur.Instance, "Donnees.json");
 
                     //si existe pas rediriger vers une autre page
                     FenCompo fenCompo = new FenCompo();

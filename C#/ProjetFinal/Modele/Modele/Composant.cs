@@ -34,6 +34,13 @@ namespace Modele
             set { _nomComp = value; }
         }
 
+        public Composant()
+        {
+            _nomComp = "Test";
+            _categorie = 1;
+            _prix = 100;
+        }
+
         public Composant(string NomComp, int Categorie, float Prix)
         {
             _nomComp = NomComp;

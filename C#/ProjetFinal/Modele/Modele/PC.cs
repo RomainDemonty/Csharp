@@ -45,6 +45,10 @@ namespace Modele
             set { _date = Date; }
         }
 
+        public PC():this("Test", "url", new ObservableCollection<Composant>(), new DateTime())
+        {
+        }
+
         public PC(string NomPc, string Image, ObservableCollection<Composant> VecteurComposant ,DateTime Date)
         {
             _nomPc = NomPc;
