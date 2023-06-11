@@ -35,15 +35,15 @@ namespace Vue
 
 
             
-            Box.Items.Add("Processeur");
-            Box.Items.Add("Carte mère");
-            Box.Items.Add("Ram");
-            Box.Items.Add("Refroidissement");
-            Box.Items.Add("Stockage");
-            Box.Items.Add("Système d'exploitation");
-            Box.Items.Add("Boitier");
-            Box.Items.Add("Carte graphique");
-            Box.Items.Add("Alimentation");
+            Box.Items.Add(1);
+            Box.Items.Add(2);
+            Box.Items.Add(3);
+            Box.Items.Add(4);
+            Box.Items.Add(5);
+            Box.Items.Add(6);
+            Box.Items.Add(7);
+            Box.Items.Add(8);
+            Box.Items.Add(9);
 
             //int[] vecteur = new int[] { 1, 2, 3, 4, 5 ,6,7,8,9};
             ;

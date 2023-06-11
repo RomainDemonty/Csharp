@@ -1,57 +1,55 @@
 {
   "$id": "1",
-  "SelectedCompo": {
-    "$id": "2",
-    "Prix": 1000,
-    "Categorie": 8,
-    "NomComp": "RTX 3060"
-  },
+  "SelectedCompo": null,
   "SelectedPC": null,
   "VecPersonnes": {
-    "$id": "3",
+    "$id": "2",
     "$values": [
       {
-        "$id": "4",
+        "$id": "3",
         "Nom": "Test",
         "motDePasse": "Test"
       },
       {
-        "$id": "5",
+        "$id": "4",
         "Nom": "sex",
         "motDePasse": "leuvrette"
       },
       {
-        "$id": "6",
+        "$id": "5",
         "Nom": "kenan",
         "motDePasse": "kenan"
       },
       {
-        "$id": "7",
+        "$id": "6",
         "Nom": "Test1",
         "motDePasse": "test123"
       },
       {
-        "$id": "8",
+        "$id": "7",
         "Nom": "Test12",
         "motDePasse": "Test12"
       }
     ]
   },
   "VecPcs": {
-    "$id": "9",
+    "$id": "8",
     "$values": []
   },
   "VecComposants": {
-    "$id": "10",
+    "$id": "9",
     "$values": [
       {
-        "$ref": "2"
+        "$id": "10",
+        "Prix": 450,
+        "Categorie": 8,
+        "NomComp": "RTX 3060"
       },
       {
         "$id": "11",
-        "Prix": 2,
-        "Categorie": 3,
-        "NomComp": "M26"
+        "Prix": 350,
+        "Categorie": 1,
+        "NomComp": "I7"
       }
     ]
   }

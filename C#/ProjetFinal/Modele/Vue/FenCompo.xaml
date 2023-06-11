@@ -56,6 +56,11 @@
 
                 <TextBlock Text="Catégorie de composant:" Margin="10px"></TextBlock>
                 <ComboBox Margin="10px" x:Name="Box" SelectedItem="{Binding Instance.SelectedCompo.Categorie, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=., Converter={StaticResource Converter}}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
                 </ComboBox>
 
                 <TextBlock Text="Prix:" Margin="10px"></TextBlock>

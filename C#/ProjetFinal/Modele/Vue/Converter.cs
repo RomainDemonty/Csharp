@@ -44,9 +44,7 @@ namespace Vue
                 case 9:
                     return "Alimentation";
                     break;
-                default: 
-                    return "Inconnu";
-                    break;
+
             }
 
             return "invalid";

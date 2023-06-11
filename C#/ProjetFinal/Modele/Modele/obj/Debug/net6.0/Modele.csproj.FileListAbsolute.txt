@@ -34,3 +34,15 @@ C:\Users\user\Desktop\romaincsharp\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug
 C:\Users\user\Desktop\romaincsharp\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\refint\Modele.dll
 C:\Users\user\Desktop\romaincsharp\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\Modele.pdb
 C:\Users\user\Desktop\romaincsharp\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\ref\Modele.dll
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\bin\Debug\net6.0\Modele.deps.json
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\bin\Debug\net6.0\Modele.dll
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\bin\Debug\net6.0\Modele.pdb
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\Modele.csproj.AssemblyReference.cache
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\Modele.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\Modele.AssemblyInfoInputs.cache
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\Modele.AssemblyInfo.cs
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\Modele.csproj.CoreCompileInputs.cache
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\Modele.dll
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\refint\Modele.dll
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\Modele.pdb
+C:\Users\romai\Desktop\Csharp\C#\ProjetFinal\Modele\Modele\obj\Debug\net6.0\ref\Modele.dll

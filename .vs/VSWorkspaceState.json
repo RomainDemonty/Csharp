@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\C#",
+    "\\C#\\ProjetFinal",
+    "\\C#\\ProjetFinal\\Modele",
+    "\\C#\\ProjetFinal\\Modele\\Modele",
+    "\\C#\\ProjetFinal\\Modele\\Vue"
   ],
-  "SelectedNode": "\\labo-1-5-RomainDemonty.sln",
+  "SelectedNode": "\\C#\\ProjetFinal\\Modele\\Vue\\Vue.csproj",
   "PreviewInSolutionExplorer": false
 }
