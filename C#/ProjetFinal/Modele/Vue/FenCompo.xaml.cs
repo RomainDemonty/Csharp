@@ -32,6 +32,9 @@ namespace Vue
                 Conteneur.Instance = Serializer.DeserializeJson("Donnees");
             }
             ¨*/
+
+
+            
             Box.Items.Add("Processeur");
             Box.Items.Add("Carte mère");
             Box.Items.Add("Ram");
@@ -41,6 +44,10 @@ namespace Vue
             Box.Items.Add("Boitier");
             Box.Items.Add("Carte graphique");
             Box.Items.Add("Alimentation");
+
+            //int[] vecteur = new int[] { 1, 2, 3, 4, 5 ,6,7,8,9};
+            ;
+
             DataContext = Conteneur.Instance;
 
 
@@ -89,8 +96,7 @@ namespace Vue
                         {
                             case "Processeur":
                                 Cat = 1;
-                                MessageBox.Show("Testtest!");
-                            break;
+                                break;
                             case "Carte mère":
                                 Cat = 2;
                                 break;

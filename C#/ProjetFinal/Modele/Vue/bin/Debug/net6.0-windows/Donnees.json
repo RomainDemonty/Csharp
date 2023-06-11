@@ -2,9 +2,9 @@
   "$id": "1",
   "SelectedCompo": {
     "$id": "2",
-    "Prix": 300,
-    "Categorie": 1,
-    "NomComp": "i900"
+    "Prix": 1000,
+    "Categorie": 8,
+    "NomComp": "RTX 3060"
   },
   "SelectedPC": null,
   "VecPersonnes": {
@@ -17,62 +17,41 @@
       },
       {
         "$id": "5",
-        "Nom": "Romain",
-        "motDePasse": "Test1"
+        "Nom": "sex",
+        "motDePasse": "leuvrette"
+      },
+      {
+        "$id": "6",
+        "Nom": "kenan",
+        "motDePasse": "kenan"
+      },
+      {
+        "$id": "7",
+        "Nom": "Test1",
+        "motDePasse": "test123"
+      },
+      {
+        "$id": "8",
+        "Nom": "Test12",
+        "motDePasse": "Test12"
       }
     ]
   },
   "VecPcs": {
-    "$id": "6",
+    "$id": "9",
     "$values": []
   },
   "VecComposants": {
-    "$id": "7",
+    "$id": "10",
     "$values": [
-      {
-        "$id": "8",
-        "Prix": 200,
-        "Categorie": 1,
-        "NomComp": "i7"
-      },
       {
         "$ref": "2"
       },
       {
-        "$id": "9",
-        "Prix": 200,
-        "Categorie": 1,
-        "NomComp": "Test"
-      },
-      {
-        "$id": "10",
-        "Prix": 200,
-        "Categorie": 1,
-        "NomComp": "zad"
-      },
-      {
         "$id": "11",
-        "Prix": 200,
-        "Categorie": 1,
-        "NomComp": "zad"
-      },
-      {
-        "$id": "12",
-        "Prix": 200,
-        "Categorie": 1,
-        "NomComp": "azdaz"
-      },
-      {
-        "$id": "13",
-        "Prix": 200,
+        "Prix": 2,
         "Categorie": 3,
-        "NomComp": "AD"
-      },
-      {
-        "$id": "14",
-        "Prix": 300,
-        "Categorie": 1,
-        "NomComp": "i900"
+        "NomComp": "M26"
       }
     ]
   }

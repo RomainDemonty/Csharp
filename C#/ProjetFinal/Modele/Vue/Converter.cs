@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
@@ -11,6 +12,7 @@ namespace Vue
 {
     public class Converter : IValueConverter
     {
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             switch (value)
@@ -42,6 +44,9 @@ namespace Vue
                 case 9:
                     return "Alimentation";
                     break;
+                default: 
+                    return "Inconnu";
+                    break;
             }
 
             return "invalid";
@@ -49,7 +54,31 @@ namespace Vue
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            string texte = value as string;
+
+            switch (texte)
+            {
+                case "Processeur":
+                    return 1;
+                case "Carte mère":
+                    return 2;
+                case "Ram":
+                    return 3;
+                case "Refroidissement":
+                    return 4;
+                case "Stockage":
+                    return 5;
+                case "Système d'exploitation":
+                    return 6;
+                case "Boitier":
+                    return 7;
+                case "Carte graphique":
+                    return 8;
+                case "Alimentation":
+                    return 9;
+                default:
+                    return DependencyProperty.UnsetValue;
+            }
         }
     }
 }
