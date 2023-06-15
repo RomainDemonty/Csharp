@@ -9,6 +9,7 @@ namespace Modele
         private string _nomPc;
         private string _image;
         private DateTime _date;
+        private float _prix;
         private ObservableCollection<Composant> _vecteurComposant;
 
         public ObservableCollection<Composant> VecteurComposant
@@ -45,16 +46,24 @@ namespace Modele
             set { _date = Date; }
         }
 
-        public PC():this("Test", "url", new ObservableCollection<Composant>(), new DateTime())
+        public float Prix
+        {
+            get { return _prix; }
+
+            set { _prix = Prix; }
+        }
+
+        public PC():this("Test", "url", new ObservableCollection<Composant>(), new DateTime(),0)
         {
         }
 
-        public PC(string NomPc, string Image, ObservableCollection<Composant> VecteurComposant ,DateTime Date)
+        public PC(string NomPc, string Image, ObservableCollection<Composant> VecteurComposant ,DateTime Date,float p)
         {
             _nomPc = NomPc;
             _image = Image;
             _vecteurComposant = VecteurComposant;
             _date = DateTime.Now;
+            _prix = p;
         }
     }
 }

@@ -33,6 +33,10 @@ namespace Modele
 
             set { _nomComp = value; }
         }
+        public override string ToString()
+        {
+            return $"{NomComp} - {Prix} €";
+        }
 
         public Composant()
         {

@@ -143,6 +143,7 @@ namespace Modele
             return res;
         }
 
+
         public event PropertyChangedEventHandler? PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
