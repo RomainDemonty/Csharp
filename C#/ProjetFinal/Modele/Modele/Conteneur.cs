@@ -64,7 +64,8 @@ namespace Modele
         public PC SelectedPC
         {
             get { return selected_pc; }
-            set { selected_pc = value; OnPropertyChanged(); }
+            set { selected_pc = value; 
+                OnPropertyChanged(); }
         }
 
         public ObservableCollection<Personne> VecPersonnes
@@ -75,7 +76,8 @@ namespace Modele
         public ObservableCollection<PC> VecPcs
         {
             get { return _vecPcs; }
-            set { _vecPcs = value; OnPropertyChanged(); }
+            set { _vecPcs = value; 
+                OnPropertyChanged(); }
 
         }
         public ObservableCollection<Composant> VecComposants

@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Vue" xmlns:modele="clr-namespace:Modele;assembly=Modele"
+        xmlns:local="clr-namespace:Vue" 
+        xmlns:modele="clr-namespace:Modele;assembly=Modele"
         mc:Ignorable="d"
         Title="FenPC" Height="650" Width="800"
         d:DataContext="{d:DesignInstance modele:Conteneur, IsDesignTimeCreatable=True}">
@@ -178,7 +179,7 @@
             <Button Content="Ajouter" Margin="5" Width="120" Click="ClickBouttonAjout">
 
             </Button>
-            <Button Content="Modifier" Margin="5" Width="120" Click="ClickBouttonModif"></Button>
+            <Button Content="Sauvegarder" Margin="5" Width="120" Click="ClickBouttonModif"></Button>
         </StackPanel>
     </Grid>
 </Window>

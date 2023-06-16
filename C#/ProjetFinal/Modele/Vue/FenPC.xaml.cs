@@ -25,7 +25,6 @@ namespace Vue
         public FenPC()
         {
             InitializeComponent();
-            DataContext = Modele.Conteneur.Instance;
 
             for (int i = 0 ; i < Conteneur.Instance.VecComposants.Count; i++)
             {
@@ -62,6 +61,7 @@ namespace Vue
                         break;
                 }
             }
+            DataContext =Conteneur.Instance;
         }
 
         private void ClickBouttonAjout(object sender, RoutedEventArgs e)
@@ -119,6 +119,7 @@ namespace Vue
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
+            Serializer.SerializeJson(Conteneur.Instance, "Donnees.json");
             this.Close();
         }
 

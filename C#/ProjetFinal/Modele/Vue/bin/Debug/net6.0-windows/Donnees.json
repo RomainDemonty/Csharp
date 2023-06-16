@@ -29,7 +29,7 @@
               "$id": "8",
               "Prix": 200,
               "Categorie": 1,
-              "NomComp": "i7"
+              "NomComp": "i9"
             },
             {
               "$id": "9",
@@ -84,87 +84,18 @@
             }
           ]
         },
-        "NomPc": "Test",
-        "Image": "C:\\Users\\romai\\Desktop\\Enregistrer.png",
-        "Date": "2023-06-15T21:41:00.8717915+02:00",
-        "Prix": 2265
-      },
-      {
-        "$id": "17",
-        "VecteurComposant": {
-          "$id": "18",
-          "$values": [
-            {
-              "$id": "19",
-              "Prix": 200,
-              "Categorie": 1,
-              "NomComp": "i7"
-            },
-            {
-              "$id": "20",
-              "Prix": 200,
-              "Categorie": 2,
-              "NomComp": "Asus B450"
-            },
-            {
-              "$id": "21",
-              "Prix": 100,
-              "Categorie": 3,
-              "NomComp": "Corsair vengance 16GB"
-            },
-            {
-              "$id": "22",
-              "Prix": 150,
-              "Categorie": 4,
-              "NomComp": "Corsair Icue"
-            },
-            {
-              "$id": "23",
-              "Prix": 150,
-              "Categorie": 5,
-              "NomComp": "Samsung 1To"
-            },
-            {
-              "$ref": "23"
-            },
-            {
-              "$id": "24",
-              "Prix": 15,
-              "Categorie": 6,
-              "NomComp": "Windows"
-            },
-            {
-              "$id": "25",
-              "Prix": 150,
-              "Categorie": 7,
-              "NomComp": "Corsair Icue"
-            },
-            {
-              "$id": "26",
-              "Prix": 1000,
-              "Categorie": 8,
-              "NomComp": "RTX 3060"
-            },
-            {
-              "$id": "27",
-              "Prix": 150,
-              "Categorie": 9,
-              "NomComp": "750w"
-            }
-          ]
-        },
-        "NomPc": "TEst4",
-        "Image": "C:\\Users\\romai\\Desktop\\ErreurChamp.png",
-        "Date": "2023-06-15T21:41:49.7993594+02:00",
+        "NomPc": "Test2",
+        "Image": "C:\\Users\\romai\\Desktop\\MelenNav.jpg",
+        "Date": "2023-06-16T09:30:22.9822535+02:00",
         "Prix": 2265
       }
     ]
   },
   "VecComposants": {
-    "$id": "28",
+    "$id": "17",
     "$values": [
       {
-        "$id": "29",
+        "$id": "18",
         "Prix": 1000,
         "Categorie": 8,
         "NomComp": "RTX 3060"
@@ -173,49 +104,49 @@
         "$ref": "2"
       },
       {
-        "$id": "30",
+        "$id": "19",
         "Prix": 200,
         "Categorie": 2,
         "NomComp": "Asus B450"
       },
       {
-        "$id": "31",
+        "$id": "20",
         "Prix": 100,
         "Categorie": 3,
         "NomComp": "Corsair vengance 16GB"
       },
       {
-        "$id": "32",
+        "$id": "21",
         "Prix": 150,
         "Categorie": 4,
         "NomComp": "Corsair Icue"
       },
       {
-        "$id": "33",
+        "$id": "22",
         "Prix": 150,
         "Categorie": 5,
         "NomComp": "Samsung 1To"
       },
       {
-        "$id": "34",
+        "$id": "23",
         "Prix": 15,
         "Categorie": 6,
         "NomComp": "Windows"
       },
       {
-        "$id": "35",
+        "$id": "24",
         "Prix": 150,
         "Categorie": 7,
         "NomComp": "Corsair Icue"
       },
       {
-        "$id": "36",
+        "$id": "25",
         "Prix": 150,
         "Categorie": 9,
         "NomComp": "750w"
       },
       {
-        "$id": "37",
+        "$id": "26",
         "Prix": 200,
         "Categorie": 1,
         "NomComp": "i9"
